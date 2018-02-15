@@ -37,3 +37,18 @@ Käivita kataloogist parallel_computing/praktikumid/MPI/kood programmid, käsuga
 
 kus *np* on protsessori tuumade arv ja *programmi nimi* on vastava koodifaili nimetus
 
+Järgmiseks, käivitada programm *separate* läbi järjekorrahalduse süsteemi.
+
+* vaata skripti separate/run_separate.sh ja proovi sisust aru saada
+* muuda käivitatava pythoni programmi asukoht enda kasutajale/keskkonnale vastavaks
+* sbatch run_separate.sh
+* programmi töö väljund tekib töökataloogi
+
+Jätka iseseisvat tööd juhendiga http://materials.jeremybejarano.com/MPIwithPython/introMPI.html ning proovi käivitada trapetsreeglki arvutus nii tava- kui paralleelversioonis.
+
+Kui aega jääb üle, vaadata https://mpi4py.scipy.org/docs/usrman/tutorial.html numpy näiteid.
+
+## Kodune ülesanne:
+Valmista näidisprogramm kasutades MPI käske scatter ja/või gather;
+Käivita programm vedur klastril vähemalt neljal sõlmel läbi SLURM keskkonna;
+Dokumenteeri programmi töö läbi kellaaegade (millal algas, millal saadi sõnumid kätte, millal saadeti tagasi).
