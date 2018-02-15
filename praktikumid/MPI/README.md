@@ -4,7 +4,11 @@ MPI - Message Passing Interface
 Kasutaja tasemel kontroll selle üle, kuidas protsessorid omavahel infot vahetavad.
 
 Miks MPI? 
+Siiani kõige kasutatavam standard suuremahuliste arvutuste jaoks HPC süsteemides. 
 
+http://mpitutorial.com/tutorials/
+https://mpi4py.scipy.org/docs/usrman/tutorial.html
+http://materials.jeremybejarano.com/MPIwithPython/introMPI.html
 
 
 Loe lähemalt: www.hpc.ut.ee
@@ -23,5 +27,13 @@ Aktiveeri keskkond
 Seejärel paigaldada MPI kasutamiseks vajalikud moodulid kasutaja keskkonda:
 * conda install mpi4py ipython
 
-Esimese, Hello world programmi saab käivitada otse juhtsõlmel, kõik keerukamad programmid tuleb käivitada läbi järjekorrahalduse süsteemi SLURM.
+Lihtsamad, nagu Hello world programmi saab käivitada otse juhtsõlmel, kõik suuremaid arvutusi läbi viivad programmid tuleb käivitada läbi järjekorrahalduse süsteemi SLURM.
+
+* git clone https://github.com/aluhamaa/parallel_computing.git
+
+Käivita kataloogist parallel_computing/praktikumid/MPI/kood programmid, käsuga:
+
+* mpiexec -n <np> <programmi nimi>
+
+kus *np* on protsessori tuumade arv ja *programmi nimi* on vastava koodifaili nimetus
 
