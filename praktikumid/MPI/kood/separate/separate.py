@@ -1,5 +1,5 @@
 from mpi4py import MPI
-import commands
+import subprocess
 
 rank = MPI.COMM_WORLD.Get_rank()
 
@@ -12,5 +12,5 @@ if rank == 1:
 if rank == 2:
         print (max(a,b))
 
-host = commands.getoutput("hostname")
-print("I am process " + str(rank) + " of " + str(size) + " on " + host)
+host = subprocess.Popen(["hostname"], stdout=subprocess.PIPE)
+print("I am process " + str(rank) +  " on " + str(host.stdout.readlines()[0]))
