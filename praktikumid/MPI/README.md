@@ -19,10 +19,10 @@ vajalik pythoni mooduli laadimine
 * module load python-3.6.0
 
 Seejärel teha enda kasutaja alla virtuaalkeskkond (sarnaselt Pythoni virtualenviga, aga Anaconda vahenditega), 
-* conda create --name <nimi>
+* conda create --name _nimi_
 
 Aktiveeri keskkond
-* source activate <nimi>
+* source activate _nimi_
 
 Seejärel paigaldada MPI kasutamiseks vajalikud moodulid kasutaja keskkonda:
 * conda install mpi4py ipython
