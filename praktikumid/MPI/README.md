@@ -35,7 +35,7 @@ Lihtsamad, nagu Hello world programmi saab käivitada otse juhtsõlmel, kõik su
 
 Käivita kataloogist parallel_computing/praktikumid/MPI/kood programmid, käsuga:
 
-* mpiexec -n _np_ _programminimi_
+* mpiexec -n _np_ python _programminimi_
 
 kus *np* on protsessori tuumade arv ja *programmi nimi* on vastava koodifaili nimetus
 
