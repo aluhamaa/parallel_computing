@@ -7,7 +7,9 @@ Miks MPI?
 Siiani kõige kasutatavam standard suuremahuliste arvutuste jaoks HPC süsteemides. 
 
 http://mpitutorial.com/tutorials/
+
 https://mpi4py.scipy.org/docs/usrman/tutorial.html
+
 http://materials.jeremybejarano.com/MPIwithPython/introMPI.html
 
 
